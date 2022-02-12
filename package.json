@@ -10,7 +10,7 @@
     "test"
   ],
   "author": "irrationnelle <drakkarverenis@gmail.com>",
-  "license": "MIT",
+  "license": "GPL-3.0-only",
   "type": "module",
   "source": "./index.ts",
   "main": "./lib/index.mjs",
