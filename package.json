@@ -1,0 +1,45 @@
+{
+  "name": "pound-foolish",
+  "version": "0.0.1",
+  "description": "very tiny test runner and matcher",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irrationnelle/pound-foolish.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "irrationnelle <drakkarverenis@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "source": "./index.ts",
+  "main": "./lib/index.mjs",
+  "module": "./lib/index.mjs",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./lib/index.cjs",
+      "import": "./lib/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public",
+    "main": "./lib/index.mjs"
+  },
+  "files": [
+    "src",
+    "lib"
+  ],
+  "scripts": {
+    "build": "nanobundle build",
+    "clean": "rimraf lib",
+    "prepack": "yarn clean && yarn build"
+  },
+  "devDependencies": {
+    "nanobundle": "^0.0.24",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.5.5"
+  },
+  "packageManager": "yarn@3.1.1"
+}
