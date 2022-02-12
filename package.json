@@ -28,7 +28,6 @@
     "main": "./lib/index.mjs"
   },
   "files": [
-    "src",
     "lib"
   ],
   "scripts": {
